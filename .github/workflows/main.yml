@@ -1,7 +1,7 @@
 name: '222'
 'on':
   schedule:
-    - cron: '*/2 * * * *'
+    - cron: '* * * * *'
   workflow_dispatch:
     inputs:
       opt:
@@ -19,3 +19,5 @@ jobs:
     steps:
       - name: echo hello
         run: echo "Hello"
+    timeout-minutes: 30
+    runs-on: ubuntu-latest
