@@ -16,8 +16,8 @@ env:
 jobs:
   job-1:
     name: Job 1
+    timeout-minutes: 30
+    runs-on: ubuntu-latest
     steps:
       - name: echo hello
         run: echo "Hello"
-    timeout-minutes: 30
-    runs-on: ubuntu-latest
