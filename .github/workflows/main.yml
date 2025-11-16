@@ -12,7 +12,7 @@
         type: choice
         options: []
   schedule:
-    - cron: '*/2 * * * *'
+    - cron: '* * * * *'
 env:
   d: '21'
 name: '222'
