@@ -1,7 +1,7 @@
 name: '222'
 'on':
   schedule:
-    - cron: '* * * * *'
+    - cron: '*/2 * * * *'
   workflow_dispatch:
     inputs:
       opt:
