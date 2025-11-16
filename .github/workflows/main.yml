@@ -21,7 +21,7 @@ jobs:
         type: choice
         options: []
   schedule:
-    - cron: '* * * * *'
+    - cron: '*/3 * * * *'
 env:
   d: '21'
 name: '222'
