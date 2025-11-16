@@ -1,7 +1,7 @@
 name: '222'
 'on':
-  schedule:
-    - cron: '* * * * *'
+  # schedule:
+  #   - cron: '* * * * *'
   workflow_dispatch: {}
 env:
   d: '21'
