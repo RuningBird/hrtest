@@ -1,28 +1,21 @@
+name: '222'
 'on':
+  schedule:
+    - cron: '*/2 * * * *'
   workflow_dispatch:
     inputs:
-      b:
-        description: sdf
-        required: true
-        type: boolean
-        default: true
-      c:
-        description: ''
+      opt:
+        description: desm
         required: false
         type: choice
-        options: []
-  schedule:
-    - cron: '* * * * *'
+        options:
+          - b
+        default: b
 env:
   d: '21'
-name: '222'
 jobs:
   job-1:
     name: Job 1
     steps:
       - name: echo hello
         run: echo "Hello"
-    timeout-minutes: 30
-    runs-on: ubuntu-latest
-    container: python:3.14
-
