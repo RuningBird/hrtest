@@ -4,6 +4,8 @@ jobs:
     steps:
       - name: echo hello
         run: echo "Hello"
+    timeout-minutes: 30
+    runs-on: ubuntu-latest
 'on':
   workflow_dispatch:
     inputs:
