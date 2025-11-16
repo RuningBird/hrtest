@@ -1,0 +1,24 @@
+jobs:
+  job-1:
+    name: Job 1
+    steps:
+      - name: echo hello
+        run: echo "Hello"
+'on':
+  workflow_dispatch:
+    inputs:
+      b:
+        description: sdf
+        required: true
+        type: boolean
+        default: true
+      c:
+        description: ''
+        required: false
+        type: choice
+        options: []
+  schedule:
+    - cron: '* * * * *'
+env:
+  d: '21'
+name: '222'
