@@ -1,16 +1,8 @@
 name: '222'
 'on':
   schedule:
-    - cron: '*/2 * * * *'
-  workflow_dispatch:
-    inputs:
-      opt:
-        description: desm
-        required: false
-        type: choice
-        options:
-          - b
-        default: b
+    - cron: '* * * * *'
+  workflow_dispatch: {}
 env:
   d: '21'
 jobs:
